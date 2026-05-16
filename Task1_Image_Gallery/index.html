@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator | CodeAlpha Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <input type="text" id="display" placeholder="0" readonly>
+        
+        <div class="button-row">
+            <button class="btn scientific-btn" onclick="lnCalc()">ln</button>
+            <button class="btn scientific-btn" onclick="factorialCalc()">x!</button>
+            <button class="btn scientific-btn" onclick="appendValue('**')">x<sup>y</sup></button>
+            <button class="btn scientific-btn" onclick="inverseCalc()">x⁻¹</button>
+            <button class="btn clear-btn" onclick="deleteChar()">DEL</button>
+        </div>
+
+        <div class="button-row">
+            <button class="btn scientific-btn" onclick="sinCalc()">sin</button>
+            <button class="btn scientific-btn" onclick="cosCalc()">cos</button> 
+            <button class="btn scientific-btn" onclick="tanCalc()">tan</button>
+            <button class="btn scientific-btn" onclick="sqrtCalc()">√</button>  
+            <button class="btn scientific-btn" onclick="squareCalc()">x<sup>2</sup></button>
+        </div>
+
+        <div class="button-row">
+            <button class="btn scientific-btn" onclick="logCalc()">log</button>
+            <button class="btn scientific-btn" onclick="absCalc()">|x|</button> 
+            <button class="btn scientific-btn" onclick="radCalc()">rad</button>
+            <button class="btn scientific-btn" onclick="piCalc()">π</button>
+            <button class="btn scientific-btn" onclick="expCalc()">e<sup>x</sup></button>
+        </div>
+
+        <div class="button-row">
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+            <button class="btn operator-btn" onclick="appendValue('+')">+</button>
+            <button class="btn scientific-btn" onclick="eCalc()">e</button>
+        </div>
+
+        <div class="button-row">
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn operator-btn" onclick="appendValue('-')">-</button>
+            <button class="btn operator-btn" onclick="appendValue('(')">(</button>
+        </div>
+
+        <div class="button-row">
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn operator-btn" onclick="appendValue('*')">*</button>
+            <button class="btn operator-btn" onclick="appendValue(')')">)</button>
+        </div>
+
+        <div class="button-row">
+            <button class="btn" onclick="appendValue('0')">0</button>
+            <button class="btn clear-btn" onclick="clearDisplay()">C</button>
+            <button class="btn equal-btn" onclick="calculateResult()">=</button>
+            <button class="btn operator-btn" onclick="appendValue('/')">/</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
